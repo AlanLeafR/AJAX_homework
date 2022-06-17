@@ -20,3 +20,15 @@ C:\Users\Student\Desktop\專案\Csharp\Hello_Forms\obj\Debug\Hello_Forms.pdb
 C:\Users\Student\Desktop\專案\Csharp\Hello_Forms\obj\Debug\Hello_Forms.FormHello.resources
 C:\Users\Student\Desktop\專案\Csharp\Hello_Forms\obj\Debug\Hello_Forms.MainForm.resources
 C:\Users\Student\Desktop\專案\Csharp\Hello_Forms\obj\Debug\Hello_Forms.MemberObjectcs.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\bin\Debug\Hello_Forms.exe.config
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\bin\Debug\Hello_Forms.exe
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\bin\Debug\Hello_Forms.pdb
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.FormHello.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.MainForm.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.MemberObjectcs.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Properties.Resources.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csproj.GenerateResource.cache
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.exe
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.pdb

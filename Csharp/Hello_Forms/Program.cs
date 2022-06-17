@@ -16,7 +16,7 @@ namespace Hello_Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MemberObjectcs());
+            Application.Run(new FormHello());
         }
     }
 }

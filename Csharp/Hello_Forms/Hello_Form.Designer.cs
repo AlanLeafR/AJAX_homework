@@ -33,11 +33,11 @@ namespace Hello_Forms
             this.label_Name1 = new System.Windows.Forms.Label();
             this.button_Name1 = new System.Windows.Forms.Button();
             this.label_Name2 = new System.Windows.Forms.Label();
-            this.label_Name3 = new System.Windows.Forms.Label();
-            this.label_Name4 = new System.Windows.Forms.Label();
+            this.Sex_Box = new System.Windows.Forms.Label();
+            this.Star_Sign = new System.Windows.Forms.Label();
             this.txtBox2 = new System.Windows.Forms.TextBox();
-            this.txtBox3 = new System.Windows.Forms.TextBox();
-            this.txtBox4 = new System.Windows.Forms.TextBox();
+            this.Sex_txt = new System.Windows.Forms.TextBox();
+            this.Star_txt = new System.Windows.Forms.TextBox();
             this.button_Name2 = new System.Windows.Forms.Button();
             this.txtBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -80,29 +80,29 @@ namespace Hello_Forms
             this.label_Name2.TabIndex = 3;
             this.label_Name2.Text = "English Name";
             // 
-            // label_Name3
+            // Sex_Box
             // 
-            this.label_Name3.AutoSize = true;
-            this.label_Name3.BackColor = System.Drawing.Color.PeachPuff;
-            this.label_Name3.Font = new System.Drawing.Font("微軟正黑體 Light", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label_Name3.Location = new System.Drawing.Point(96, 273);
-            this.label_Name3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Name3.Name = "label_Name3";
-            this.label_Name3.Size = new System.Drawing.Size(109, 54);
-            this.label_Name3.TabIndex = 4;
-            this.label_Name3.Text = "性別";
+            this.Sex_Box.AutoSize = true;
+            this.Sex_Box.BackColor = System.Drawing.Color.PeachPuff;
+            this.Sex_Box.Font = new System.Drawing.Font("微軟正黑體 Light", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Sex_Box.Location = new System.Drawing.Point(96, 273);
+            this.Sex_Box.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Sex_Box.Name = "Sex_Box";
+            this.Sex_Box.Size = new System.Drawing.Size(109, 54);
+            this.Sex_Box.TabIndex = 4;
+            this.Sex_Box.Text = "性別";
             // 
-            // label_Name4
+            // Star_Sign
             // 
-            this.label_Name4.AutoSize = true;
-            this.label_Name4.BackColor = System.Drawing.Color.PeachPuff;
-            this.label_Name4.Font = new System.Drawing.Font("微軟正黑體 Light", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label_Name4.Location = new System.Drawing.Point(96, 365);
-            this.label_Name4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Name4.Name = "label_Name4";
-            this.label_Name4.Size = new System.Drawing.Size(109, 54);
-            this.label_Name4.TabIndex = 5;
-            this.label_Name4.Text = "星座";
+            this.Star_Sign.AutoSize = true;
+            this.Star_Sign.BackColor = System.Drawing.Color.PeachPuff;
+            this.Star_Sign.Font = new System.Drawing.Font("微軟正黑體 Light", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Star_Sign.Location = new System.Drawing.Point(96, 365);
+            this.Star_Sign.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Star_Sign.Name = "Star_Sign";
+            this.Star_Sign.Size = new System.Drawing.Size(109, 54);
+            this.Star_Sign.TabIndex = 5;
+            this.Star_Sign.Text = "星座";
             // 
             // txtBox2
             // 
@@ -115,25 +115,25 @@ namespace Hello_Forms
             this.txtBox2.TabIndex = 6;
             this.txtBox2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // txtBox3
+            // Sex_txt
             // 
-            this.txtBox3.BackColor = System.Drawing.Color.LightGray;
-            this.txtBox3.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtBox3.Location = new System.Drawing.Point(504, 273);
-            this.txtBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBox3.Name = "txtBox3";
-            this.txtBox3.Size = new System.Drawing.Size(247, 43);
-            this.txtBox3.TabIndex = 7;
+            this.Sex_txt.BackColor = System.Drawing.Color.LightGray;
+            this.Sex_txt.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Sex_txt.Location = new System.Drawing.Point(504, 273);
+            this.Sex_txt.Margin = new System.Windows.Forms.Padding(4);
+            this.Sex_txt.Name = "Sex_txt";
+            this.Sex_txt.Size = new System.Drawing.Size(247, 43);
+            this.Sex_txt.TabIndex = 7;
             // 
-            // txtBox4
+            // Star_txt
             // 
-            this.txtBox4.BackColor = System.Drawing.Color.LightGray;
-            this.txtBox4.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtBox4.Location = new System.Drawing.Point(504, 376);
-            this.txtBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBox4.Name = "txtBox4";
-            this.txtBox4.Size = new System.Drawing.Size(247, 43);
-            this.txtBox4.TabIndex = 8;
+            this.Star_txt.BackColor = System.Drawing.Color.LightGray;
+            this.Star_txt.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Star_txt.Location = new System.Drawing.Point(504, 376);
+            this.Star_txt.Margin = new System.Windows.Forms.Padding(4);
+            this.Star_txt.Name = "Star_txt";
+            this.Star_txt.Size = new System.Drawing.Size(247, 43);
+            this.Star_txt.TabIndex = 8;
             // 
             // button_Name2
             // 
@@ -166,11 +166,11 @@ namespace Hello_Forms
             this.ClientSize = new System.Drawing.Size(856, 643);
             this.Controls.Add(this.txtBox1);
             this.Controls.Add(this.button_Name2);
-            this.Controls.Add(this.txtBox4);
-            this.Controls.Add(this.txtBox3);
+            this.Controls.Add(this.Star_txt);
+            this.Controls.Add(this.Sex_txt);
             this.Controls.Add(this.txtBox2);
-            this.Controls.Add(this.label_Name4);
-            this.Controls.Add(this.label_Name3);
+            this.Controls.Add(this.Star_Sign);
+            this.Controls.Add(this.Sex_Box);
             this.Controls.Add(this.label_Name2);
             this.Controls.Add(this.button_Name1);
             this.Controls.Add(this.label_Name1);
@@ -189,11 +189,11 @@ namespace Hello_Forms
         private System.Windows.Forms.Label label_Name1;
         private System.Windows.Forms.Button button_Name1;
         private System.Windows.Forms.Label label_Name2;
-        private System.Windows.Forms.Label label_Name3;
-        private System.Windows.Forms.Label label_Name4;
+        private System.Windows.Forms.Label Sex_Box;
+        private System.Windows.Forms.Label Star_Sign;
         private System.Windows.Forms.TextBox txtBox2;
-        private System.Windows.Forms.TextBox txtBox3;
-        private System.Windows.Forms.TextBox txtBox4;
+        private System.Windows.Forms.TextBox Sex_txt;
+        private System.Windows.Forms.TextBox Star_txt;
         private System.Windows.Forms.Button button_Name2;
         private System.Windows.Forms.TextBox txtBox1;
     }

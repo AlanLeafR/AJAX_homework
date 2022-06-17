@@ -31,7 +31,11 @@ namespace Hello_Forms
         private void button_Name1_Click(object sender, EventArgs e)
         {
             string NameBox = txtBox1.Text;
-            MessageBox.Show("Hello, " + NameBox);
+            string SexBox = Sex_txt.Text;
+            string StarBox = Star_txt.Text;
+
+            MessageBox.Show("Hello, " + NameBox+"\n我的性別是"+SexBox+"\n我的星座是"+StarBox+
+                "\n很高興認識你!");
         }
 
         private void tet_Name1_TextChanged(object sender, EventArgs e)
@@ -47,7 +51,11 @@ namespace Hello_Forms
         private void button_Name2_Click(object sender, EventArgs e)
         {
             string NameBox2 = txtBox2.Text;
-            MessageBox.Show("Hello, " + NameBox2);
+            string SexBox = Sex_txt.Text;
+            string StarBox = Star_txt.Text;
+
+            MessageBox.Show("你好, " + NameBox2 + "\n我的性別是" + SexBox + "\n我的星座是" + StarBox
+                +"\nNice to meet you!");
         }
     }
 }
