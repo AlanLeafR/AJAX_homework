@@ -16,3 +16,14 @@ C:\Users\Student\Desktop\專案\Csharp\Console_Csharp\obj\Debug\Console_Csharp.c
 C:\Users\Student\Desktop\專案\Csharp\Console_Csharp\obj\Debug\Console_Csharp.csproj.CopyComplete
 C:\Users\Student\Desktop\專案\Csharp\Console_Csharp\obj\Debug\Console_Csharp.exe
 C:\Users\Student\Desktop\專案\Csharp\Console_Csharp\obj\Debug\Console_Csharp.pdb
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\bin\Debug\Console_Csharp.exe.config
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\bin\Debug\Console_Csharp.exe
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\bin\Debug\Console_Csharp.pdb
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\bin\Debug\Hello_Forms.exe
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\bin\Debug\Hello_Forms.pdb
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\bin\Debug\Hello_Forms.exe.config
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\obj\Debug\Console_Csharp.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\obj\Debug\Console_Csharp.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\obj\Debug\Console_Csharp.csproj.CopyComplete
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\obj\Debug\Console_Csharp.exe
+C:\Users\Student\Desktop\project\Csharp\Console_Csharp\obj\Debug\Console_Csharp.pdb

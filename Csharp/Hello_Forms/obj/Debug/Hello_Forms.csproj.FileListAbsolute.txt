@@ -23,7 +23,6 @@ C:\Users\Student\Desktop\專案\Csharp\Hello_Forms\obj\Debug\Hello_Forms.MemberO
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\bin\Debug\Hello_Forms.exe.config
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\bin\Debug\Hello_Forms.exe
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\bin\Debug\Hello_Forms.pdb
-C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csprojAssemblyReference.cache
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.FormHello.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.MainForm.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.MemberObjectcs.resources
@@ -32,3 +31,18 @@ C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csproj
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csproj.CoreCompileInputs.cache
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.exe
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.pdb
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M12.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M15_CTS.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M16.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M18.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw2_Loan.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw2_Loan_Report.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw3_POS.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M19.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M22.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M26.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M26進階方法.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M29傳統集合.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw4_student_structform.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw5_student_grade.resources

@@ -70,5 +70,10 @@ namespace Hello_Forms
             mc.Method07();
             mc.Method08();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(UseStatic.StaticCount.ToString());
+        }
     }
 }

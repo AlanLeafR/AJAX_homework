@@ -46,11 +46,95 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_M16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M16.Designer.cs">
+      <DependentUpon>Frm_M16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M15_CTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M15_CTS.Designer.cs">
+      <DependentUpon>Frm_M15_CTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M12.Designer.cs">
+      <DependentUpon>Frm_M12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M18.Designer.cs">
+      <DependentUpon>Frm_M18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M19.Designer.cs">
+      <DependentUpon>Frm_M19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M22.Designer.cs">
+      <DependentUpon>Frm_M22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M26.Designer.cs">
+      <DependentUpon>Frm_M26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M26進階方法.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M26進階方法.Designer.cs">
+      <DependentUpon>Frm_M26進階方法.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M29傳統集合.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M29傳統集合.Designer.cs">
+      <DependentUpon>Frm_M29傳統集合.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hello_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Hello_Form.Designer.cs">
       <DependentUpon>Hello_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw2_Loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw2_Loan.Designer.cs">
+      <DependentUpon>hw2_Loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw2_Loan_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw2_Loan_Report.Designer.cs">
+      <DependentUpon>hw2_Loan_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw3_POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw3_POS.Designer.cs">
+      <DependentUpon>hw3_POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw4_student_structform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw4_student_structform.Designer.cs">
+      <DependentUpon>hw4_student_structform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw5_student_grade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw5_student_grade.Designer.cs">
+      <DependentUpon>hw5_student_grade.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -68,8 +152,50 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="Frm_M16.resx">
+      <DependentUpon>Frm_M16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M15_CTS.resx">
+      <DependentUpon>Frm_M15_CTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M12.resx">
+      <DependentUpon>Frm_M12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M18.resx">
+      <DependentUpon>Frm_M18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M19.resx">
+      <DependentUpon>Frm_M19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M22.resx">
+      <DependentUpon>Frm_M22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M26.resx">
+      <DependentUpon>Frm_M26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M26進階方法.resx">
+      <DependentUpon>Frm_M26進階方法.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M29傳統集合.resx">
+      <DependentUpon>Frm_M29傳統集合.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hello_Form.resx">
       <DependentUpon>Hello_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw2_Loan.resx">
+      <DependentUpon>hw2_Loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw2_Loan_Report.resx">
+      <DependentUpon>hw2_Loan_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw3_POS.resx">
+      <DependentUpon>hw3_POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw4_student_structform.resx">
+      <DependentUpon>hw4_student_structform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw5_student_grade.resx">
+      <DependentUpon>hw5_student_grade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

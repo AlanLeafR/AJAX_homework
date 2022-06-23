@@ -37,6 +37,7 @@ namespace Hello_Forms
             this.AgeCalculator = new System.Windows.Forms.Button();
             this.EncapTest = new System.Windows.Forms.Button();
             this.PartcailClass = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // opnHello
@@ -122,6 +123,18 @@ namespace Hello_Forms
             this.PartcailClass.UseVisualStyleBackColor = true;
             this.PartcailClass.Click += new System.EventHandler(this.PartcailClass_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(445, 345);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(280, 63);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "7. Staic Count";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -129,6 +142,7 @@ namespace Hello_Forms
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1026, 581);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.PartcailClass);
             this.Controls.Add(this.EncapTest);
             this.Controls.Add(this.AgeCalculator);
@@ -153,5 +167,6 @@ namespace Hello_Forms
         private System.Windows.Forms.Button AgeCalculator;
         private System.Windows.Forms.Button EncapTest;
         private System.Windows.Forms.Button PartcailClass;
+        private System.Windows.Forms.Button button2;
     }
 }
