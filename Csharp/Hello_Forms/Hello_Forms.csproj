@@ -94,11 +94,23 @@
     <Compile Include="Frm_M26進階方法.Designer.cs">
       <DependentUpon>Frm_M26進階方法.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_M29_泛用集合.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M29_泛用集合.Designer.cs">
+      <DependentUpon>Frm_M29_泛用集合.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_M29傳統集合.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_M29傳統集合.Designer.cs">
       <DependentUpon>Frm_M29傳統集合.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M32.Designer.cs">
+      <DependentUpon>Frm_M32.cs</DependentUpon>
     </Compile>
     <Compile Include="Hello_Form.cs">
       <SubType>Form</SubType>
@@ -176,8 +188,14 @@
     <EmbeddedResource Include="Frm_M26進階方法.resx">
       <DependentUpon>Frm_M26進階方法.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M29_泛用集合.resx">
+      <DependentUpon>Frm_M29_泛用集合.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_M29傳統集合.resx">
       <DependentUpon>Frm_M29傳統集合.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M32.resx">
+      <DependentUpon>Frm_M32.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hello_Form.resx">
       <DependentUpon>Hello_Form.cs</DependentUpon>

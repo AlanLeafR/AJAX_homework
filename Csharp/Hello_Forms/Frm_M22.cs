@@ -120,6 +120,30 @@ namespace Hello_Forms
             }
             MessageBox.Show(result);
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            foreach(Control ABC in this.Controls)
+            {
+                //if(ABC.GetType() != typeof (Button))
+                //{
+                //    continue;
+                //}
+
+                if(!(ABC is Button))
+                {
+                    continue;
+                }
+
+                ABC.Left -= 10;
+                ABC.Top += 10;
+                ABC.BackColor = Color.DimGray;
+                ABC.ForeColor = Color.Olive;
+                ABC.Width += 10;
+                //textBox.Font = new Font(textBox.Font.FontFamily, textBox.Font.Size*1.1f)
+                ABC.Font = new Font(ABC.Font.FontFamily, ABC.Font.Size+1.1f);
+            }
+        }
     }
 }
 

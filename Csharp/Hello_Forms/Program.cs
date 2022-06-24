@@ -16,7 +16,7 @@ namespace Hello_Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new hw5_student_grade());
+            Application.Run(new Frm_M32());
         }
     }
 }
