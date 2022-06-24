@@ -43,8 +43,8 @@ C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M2
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M26.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M26進階方法.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M29傳統集合.resources
-C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csprojAssemblyReference.cache
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw4_student_structform.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw5_student_grade.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M29_泛用集合.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M32.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M34.resources
