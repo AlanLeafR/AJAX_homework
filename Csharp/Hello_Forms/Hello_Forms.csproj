@@ -154,6 +154,24 @@
     <Compile Include="hw5_student_grade.Designer.cs">
       <DependentUpon>hw5_student_grade.cs</DependentUpon>
     </Compile>
+    <Compile Include="hw7_Simple_Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw7_Simple_Calculator.Designer.cs">
+      <DependentUpon>hw7_Simple_Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_TEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_TEST.Designer.cs">
+      <DependentUpon>HW_TEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leaf_Homework_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaf_Homework_Form.Designer.cs">
+      <DependentUpon>Leaf_Homework_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +241,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hw5_student_grade.resx">
       <DependentUpon>hw5_student_grade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw7_Simple_Calculator.resx">
+      <DependentUpon>hw7_Simple_Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_TEST.resx">
+      <DependentUpon>HW_TEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leaf_Homework_Form.resx">
+      <DependentUpon>Leaf_Homework_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

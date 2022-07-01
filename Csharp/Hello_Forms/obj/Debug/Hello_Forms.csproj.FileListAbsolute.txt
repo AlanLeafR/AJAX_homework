@@ -48,3 +48,7 @@ C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw5_st
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M29_泛用集合.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M32.resources
 C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Frm_M34.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.hw7_Simple_Calculator.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.Leaf_Homework_Form.resources
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\project\Csharp\Hello_Forms\obj\Debug\Hello_Forms.HW_TEST.resources

@@ -16,7 +16,7 @@ namespace Hello_Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_M34());
+            Application.Run(new Leaf_Homework_Form());
         }
     }
 }
