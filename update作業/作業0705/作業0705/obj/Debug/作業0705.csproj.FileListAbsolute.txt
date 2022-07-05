@@ -1,0 +1,16 @@
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.Leaf_Homework_Form.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.Properties.Resources.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.csproj.GenerateResource.cache
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.FormHello.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.hw2_Loan.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.hw2_Loan_Report.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.hw3_POS.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.hw4_student_structform.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.hw5_student_grade.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.hw7_Simple_Calculator.resources
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\bin\Debug\作業0705.exe.config
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\bin\Debug\作業0705.exe
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\bin\Debug\作業0705.pdb
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.exe
+C:\Users\Student\Desktop\project\update作業\作業0705\作業0705\obj\Debug\作業0705.pdb
