@@ -40,5 +40,11 @@ namespace Hello_Forms
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            label1.Text = (string)i;
+        }
     }
 }
