@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TravelerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Itinerary Plan行程計畫">
+    <Key>
+      <PropertyRef Name="Itinerary ID" />
+    </Key>
+    <Property Name="Itinerary ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Payment Method ID" Type="int" Nullable="false" />
+    <Property Name="Itinerary Days" Type="smallint" Nullable="false" />
+    <Property Name="Departure Date" Type="datetime" Nullable="false" />
+    <Property Name="Inbound Date" Type="datetime" Nullable="false" />
+    <Property Name="Maximum number of people" Type="smallint" Nullable="false" />
+    <Property Name="Single Journey Price" Type="money" Nullable="false" />
+    <Property Name="Itinerary Describtion" Type="nvarchar(max)" />
+    <Property Name="旅遊類型ID" Type="int" Nullable="false" />
+    <Property Name="旅遊主題ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Member Info List">
+    <Key>
+      <PropertyRef Name="Member ID" />
+    </Key>
+    <Property Name="Member ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Phone_Number" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nationality" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="bonus points" Type="int" />
+    <Property Name="password" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID_number" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order訂單">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="Unified Business No." Type="int" Nullable="false" />
+    <Property Name="Payment Number" Type="int" Nullable="false" />
+    <Property Name="Member ID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Payment Methods ID" Type="int" Nullable="false" />
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Itinerary ID" Type="int" Nullable="false" />
+    <Property Name="Credit Card Number" Type="varchar" MaxLength="30" />
+    <Property Name="Passport Number" Type="varchar" MaxLength="30" />
+    <Property Name="Passport Expiry Date" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK_Order訂單_[Itinerary Plan]行程計畫">
+    <End Role="Itinerary Plan行程計畫" Type="Self.Itinerary Plan行程計畫" Multiplicity="1" />
+    <End Role="Order訂單" Type="Self.Order訂單" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Itinerary Plan行程計畫">
+        <PropertyRef Name="Itinerary ID" />
+      </Principal>
+      <Dependent Role="Order訂單">
+        <PropertyRef Name="Itinerary ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order訂單_Member Info List">
+    <End Role="Member Info List" Type="Self.Member Info List" Multiplicity="1" />
+    <End Role="Order訂單" Type="Self.Order訂單" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member Info List">
+        <PropertyRef Name="Member ID" />
+      </Principal>
+      <Dependent Role="Order訂單">
+        <PropertyRef Name="Member ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TravelerModelStoreContainer">
+    <EntitySet Name="Itinerary Plan行程計畫" EntityType="Self.Itinerary Plan行程計畫" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member Info List" EntityType="Self.Member Info List" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order訂單" EntityType="Self.Order訂單" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Order訂單_[Itinerary Plan]行程計畫" Association="Self.FK_Order訂單_[Itinerary Plan]行程計畫">
+      <End Role="Itinerary Plan行程計畫" EntitySet="Itinerary Plan行程計畫" />
+      <End Role="Order訂單" EntitySet="Order訂單" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order訂單_Member Info List" Association="Self.FK_Order訂單_Member Info List">
+      <End Role="Member Info List" EntitySet="Member Info List" />
+      <End Role="Order訂單" EntitySet="Order訂單" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
