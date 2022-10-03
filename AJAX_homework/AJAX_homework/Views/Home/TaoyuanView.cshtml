@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewData["Title"] = "TaoyuanView";
+}
+@section TaoyuanViewCSS{ 
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    th{
+        border:1px solid red;
+    }
+    td {
+        border: 1px solid red;
+        word-break: break-all;
+    }
+    table {
+        width:200% ;
+        table-layout:fixed;
+    }
+</style>
+}
+
+<h1>桃園觀光景點一覽表</h1>
+<ul id="TaoyuanViewMap"></ul>
+<div >
+    <table  id="TaoyuanViewTable">            
+    </table>
+</div>
+
+
+@section TaoyuanView{ 
+<script src="~/js/travel.js"></script>
+<script >
+
+    const theTable = document.querySelector("#TaoyuanViewTable");
+
+    //方法1-課堂解
+
+     //const theDiv = document.querySelector("#TaoyuanViewMap");
+    //const docFrag = document.createDocumentFragment();
+    //for (let i = 0; i < DATAS.length; i++) {
+
+    //    const { InfoId, TYWebsite, Name, Toldescribe, Add, Zipcode, Opentime, Px, Py,
+    //        Website, Parkinginfo, Ticketinfo, Remarks, Tel, Fax, Changetime } = DATAS[i];        
+    //    const eleText = document.createTextNode(`名字:${Name}、郵遞區號:${Zipcode}`);
+    //    const eleLi = document.createElement("li");
+    //    eleLi.appendChild(eleText);
+    //    docFrag.appendChild(eleLi);
+    //}
+    //theDiv.appendChild(docFrag);   
+
+
+    //方法2-物件屬性/值一個個慢慢寫
+
+    //const theTable = document.querySelector("#TaoyuanViewTable");
+    //const docFrag2 = document.createDocumentFragment();
+    //for (let i = 0; i <5; i++) {
+
+    //    const { InfoId, TYWebsite, Name, Toldescribe, Add, Zipcode, Opentime, Px, Py,
+    //        Website, Parkinginfo, Ticketinfo, Remarks, Tel, Fax, Changetime } = DATAS[i];
+
+    //    const eleTr = document.createElement("tr");
+    //    docFrag2.appendChild(eleTr);
+
+
+    //    const eleTd = document.createElement("td");
+    //    eleTd.innerHTML = DATAS[i].Name;
+    //    const eleTd2 = document.createElement("td");
+    //    eleTd2.innerHTML = DATAS[i].Zipcode;
+    //    eleTr.appendChild(eleTd);
+    //    eleTr.appendChild(eleTd2);
+    //}
+    //theTable.appendChild(docFrag2);
+
+
+    // 方法3-Object.keys()／Object.values() 取值
+
+    let a = [];
+    a = Object.keys(DATAS[0]);
+
+    const eleTr = document.createElement("tr");
+    for (let i = 0; i < a.length; i++) {        
+        const eleTh = document.createElement("th");
+        eleTh.innerHTML = a[i];
+        eleTr.appendChild(eleTh);
+    }
+    theTable.appendChild(eleTr);
+
+
+    let b = [];
+    for (let i = 0; i < DATAS.length; i++) {
+        const eleTr2 = document.createElement("tr");
+        b = Object.values(DATAS[i]);
+        for (let j = 0; j < b.length; j++) {
+            const eleTd = document.createElement("td");
+            eleTd.innerHTML = b[j];
+            eleTr2.appendChild(eleTd);
+        }
+        theTable.appendChild(eleTr2);
+    }
+  
+
+</script>
+}
