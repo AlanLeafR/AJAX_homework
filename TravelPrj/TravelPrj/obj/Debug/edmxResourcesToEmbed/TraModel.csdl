@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TravelerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Itinerary_Plan行程計畫">
+    <Key>
+      <PropertyRef Name="Itinerary_ID" />
+    </Key>
+    <Property Name="Itinerary_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Itinerary_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Itinerary_Days" Type="Int16" Nullable="false" />
+    <Property Name="Departure_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Inbound_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Maximum_number_of_people" Type="Int16" Nullable="false" />
+    <Property Name="Single_Journey_Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Itinerary_Describtion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="旅遊類型ID" Type="Int32" Nullable="false" />
+    <Property Name="旅遊主題ID" Type="Int32" Nullable="false" />
+    <Property Name="介紹文章" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="圖片" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Order訂單" Relationship="Self.FK_Order訂單__Itinerary_Plan_行程計畫" FromRole="Itinerary_Plan行程計畫" ToRole="Order訂單" />
+  </EntityType>
+  <EntityType Name="Member_Info_List">
+    <Key>
+      <PropertyRef Name="Member_ID" />
+    </Key>
+    <Property Name="Member_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone_Number" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="D_O_B" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nationality" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="bonus_points" Type="Int32" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_number" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEX" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Passport_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Order訂單" Relationship="Self.FK_Order訂單_Member_Info_List" FromRole="Member_Info_List" ToRole="Order訂單" />
+  </EntityType>
+  <EntityType Name="Order訂單">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="Unified_Business_No_" Type="Int32" />
+    <Property Name="Member_ID" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Payment_Methods_ID" Type="Int32" Nullable="false" />
+    <Property Name="OrderID" Type="Int32" Nullable="false" />
+    <Property Name="Itinerary_ID" Type="Int32" />
+    <Property Name="Credit_Card_Number" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Itinerary_Plan行程計畫" Relationship="Self.FK_Order訂單__Itinerary_Plan_行程計畫" FromRole="Order訂單" ToRole="Itinerary_Plan行程計畫" />
+    <NavigationProperty Name="Member_Info_List" Relationship="Self.FK_Order訂單_Member_Info_List" FromRole="Order訂單" ToRole="Member_Info_List" />
+  </EntityType>
+  <Association Name="FK_Order訂單__Itinerary_Plan_行程計畫">
+    <End Role="Itinerary_Plan行程計畫" Type="Self.Itinerary_Plan行程計畫" Multiplicity="0..1" />
+    <End Role="Order訂單" Type="Self.Order訂單" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Itinerary_Plan行程計畫">
+        <PropertyRef Name="Itinerary_ID" />
+      </Principal>
+      <Dependent Role="Order訂單">
+        <PropertyRef Name="Itinerary_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order訂單_Member_Info_List">
+    <End Role="Member_Info_List" Type="Self.Member_Info_List" Multiplicity="1" />
+    <End Role="Order訂單" Type="Self.Order訂單" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member_Info_List">
+        <PropertyRef Name="Member_ID" />
+      </Principal>
+      <Dependent Role="Order訂單">
+        <PropertyRef Name="Member_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TravelerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Itinerary_Plan行程計畫" EntityType="Self.Itinerary_Plan行程計畫" />
+    <EntitySet Name="Member_Info_Lists" EntityType="Self.Member_Info_List" />
+    <EntitySet Name="Order訂單" EntityType="Self.Order訂單" />
+    <AssociationSet Name="FK_Order訂單__Itinerary_Plan_行程計畫" Association="Self.FK_Order訂單__Itinerary_Plan_行程計畫">
+      <End Role="Itinerary_Plan行程計畫" EntitySet="Itinerary_Plan行程計畫" />
+      <End Role="Order訂單" EntitySet="Order訂單" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order訂單_Member_Info_List" Association="Self.FK_Order訂單_Member_Info_List">
+      <End Role="Member_Info_List" EntitySet="Member_Info_Lists" />
+      <End Role="Order訂單" EntitySet="Order訂單" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

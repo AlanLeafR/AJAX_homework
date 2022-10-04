@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TravelerModelStoreContainer" CdmEntityContainer="TravelerEntities">
+    <EntitySetMapping Name="Itinerary_Plan行程計畫">
+      <EntityTypeMapping TypeName="TravelerModel.Itinerary_Plan行程計畫">
+        <MappingFragment StoreEntitySet="Itinerary Plan行程計畫">
+          <ScalarProperty Name="Itinerary_ID" ColumnName="Itinerary ID" />
+          <ScalarProperty Name="Itinerary_Name" ColumnName="Itinerary Name" />
+          <ScalarProperty Name="Itinerary_Days" ColumnName="Itinerary Days" />
+          <ScalarProperty Name="Departure_Date" ColumnName="Departure Date" />
+          <ScalarProperty Name="Inbound_Date" ColumnName="Inbound Date" />
+          <ScalarProperty Name="Maximum_number_of_people" ColumnName="Maximum number of people" />
+          <ScalarProperty Name="Single_Journey_Price" ColumnName="Single Journey Price" />
+          <ScalarProperty Name="Itinerary_Describtion" ColumnName="Itinerary Describtion" />
+          <ScalarProperty Name="旅遊類型ID" ColumnName="旅遊類型ID" />
+          <ScalarProperty Name="旅遊主題ID" ColumnName="旅遊主題ID" />
+          <ScalarProperty Name="介紹文章" ColumnName="介紹文章" />
+          <ScalarProperty Name="圖片" ColumnName="圖片" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Member_Info_Lists">
+      <EntityTypeMapping TypeName="TravelerModel.Member_Info_List">
+        <MappingFragment StoreEntitySet="Member Info List">
+          <ScalarProperty Name="Member_ID" ColumnName="Member ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="D_O_B" ColumnName="D.O.B" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="bonus_points" ColumnName="bonus points" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="ID_number" ColumnName="ID_number" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="Passport_Number" ColumnName="Passport Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order訂單">
+      <EntityTypeMapping TypeName="TravelerModel.Order訂單">
+        <MappingFragment StoreEntitySet="Order訂單">
+          <ScalarProperty Name="Unified_Business_No_" ColumnName="Unified Business No." />
+          <ScalarProperty Name="Member_ID" ColumnName="Member ID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Payment_Methods_ID" ColumnName="Payment Methods ID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Itinerary_ID" ColumnName="Itinerary ID" />
+          <ScalarProperty Name="Credit_Card_Number" ColumnName="Credit Card Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

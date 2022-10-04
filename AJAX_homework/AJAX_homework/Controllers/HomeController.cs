@@ -22,7 +22,7 @@ namespace AJAX_homework.Controllers
         {
             return View();
         }
-        //引用 js/travels，將資料讀出來顯示在網頁上
+        //引用 js/travels，將資料讀出來顯示在網頁上 (作業1)
         public IActionResult TaoyuanView()
         {
             return View();
