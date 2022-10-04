@@ -21,7 +21,7 @@ namespace TravelPrj
         }
     
         public int Itinerary_ID { get; set; }
-        public int Payment_Method_ID { get; set; }
+        public string Itinerary_Name { get; set; }
         public short Itinerary_Days { get; set; }
         public System.DateTime Departure_Date { get; set; }
         public System.DateTime Inbound_Date { get; set; }
@@ -30,6 +30,8 @@ namespace TravelPrj
         public string Itinerary_Describtion { get; set; }
         public int 旅遊類型ID { get; set; }
         public int 旅遊主題ID { get; set; }
+        public string 介紹文章 { get; set; }
+        public byte[] 圖片 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order訂單> Order訂單 { get; set; }

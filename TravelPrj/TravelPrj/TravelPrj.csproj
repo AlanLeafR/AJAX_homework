@@ -80,30 +80,30 @@
       <DependentUpon>Frm會員資料管理.cs</DependentUpon>
     </Compile>
     <Compile Include="Itinerary_Plan行程計畫.cs">
-      <DependentUpon>TraDataBase.tt</DependentUpon>
+      <DependentUpon>TraModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Member_Info_List.cs">
-      <DependentUpon>TraDataBase.tt</DependentUpon>
+      <DependentUpon>TraModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Order訂單.cs">
-      <DependentUpon>TraDataBase.tt</DependentUpon>
+      <DependentUpon>TraModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TraDataBase.Context.cs">
+    <Compile Include="TraModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TraDataBase.Context.tt</DependentUpon>
+      <DependentUpon>TraModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="TraDataBase.cs">
+    <Compile Include="TraModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TraDataBase.tt</DependentUpon>
+      <DependentUpon>TraModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TraDataBase.Designer.cs">
+    <Compile Include="TraModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TraDataBase.edmx</DependentUpon>
+      <DependentUpon>TraModel.edmx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -136,31 +136,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="TraDataBase.edmx">
+    <EntityDeploy Include="TraModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TraDataBase.Designer.cs</LastGenOutput>
+      <LastGenOutput>TraModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="TraDataBase.edmx.diagram">
-      <DependentUpon>TraDataBase.edmx</DependentUpon>
+    <None Include="TraModel.edmx.diagram">
+      <DependentUpon>TraModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TraDataBase.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>TraDataBase.Context.cs</LastGenOutput>
-      <DependentUpon>TraDataBase.edmx</DependentUpon>
-    </Content>
-    <Content Include="TraDataBase.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TraDataBase.edmx</DependentUpon>
-      <LastGenOutput>TraDataBase.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="TraModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TraModel.edmx</DependentUpon>
+      <LastGenOutput>TraModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="TraModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TraModel.edmx</DependentUpon>
+      <LastGenOutput>TraModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -27,6 +27,11 @@ namespace AJAX_homework.Controllers
         {
             return View();
         }
+        public IActionResult Register()
+        {
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {

@@ -14,16 +14,13 @@ namespace TravelPrj
     
     public partial class Order訂單
     {
-        public int Unified_Business_No_ { get; set; }
-        public int Payment_Number { get; set; }
+        public Nullable<int> Unified_Business_No_ { get; set; }
         public int Member_ID { get; set; }
         public Nullable<int> Price { get; set; }
         public int Payment_Methods_ID { get; set; }
         public int OrderID { get; set; }
-        public int Itinerary_ID { get; set; }
+        public Nullable<int> Itinerary_ID { get; set; }
         public string Credit_Card_Number { get; set; }
-        public string Passport_Number { get; set; }
-        public string Passport_Expiry_Date { get; set; }
     
         public virtual Itinerary_Plan行程計畫 Itinerary_Plan行程計畫 { get; set; }
         public virtual Member_Info_List Member_Info_List { get; set; }

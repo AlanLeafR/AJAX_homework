@@ -24,11 +24,15 @@ namespace TravelPrj
         public string Name { get; set; }
         public string Phone_Number { get; set; }
         public string Email { get; set; }
+        public string D_O_B { get; set; }
+        public string Address { get; set; }
         public string Nationality { get; set; }
         public Nullable<int> bonus_points { get; set; }
         public string password { get; set; }
         public string ID_number { get; set; }
-        public string Title { get; set; }
+        public string SEX { get; set; }
+        public byte[] image { get; set; }
+        public string Passport_Number { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order訂單> Order訂單 { get; set; }
