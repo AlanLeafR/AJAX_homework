@@ -50,7 +50,7 @@ namespace AJAX_homework
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Register}/{id?}");
+                    pattern: "{controller=Home}/{action=Homewrok3}/{id?}");
             });
         }
     }
