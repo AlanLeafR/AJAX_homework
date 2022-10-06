@@ -48,6 +48,10 @@ namespace AJAX_homework.Controllers
         {
             return View();
         }
+        public IActionResult Homewrok4()
+        {
+            return View();
+        }
 
     }
 }

@@ -7,22 +7,26 @@ using System.Threading.Tasks;
 
 namespace AJAX_homework.Controllers
 {
+   
     public class ApiController : Controller
     {
-        DemoContext _context = new DemoContext();
-        //private readonly DemoContext _context; //把資料庫注入
-        //public ApiController( DemoContext context)
-        //{
-        //    _context = context;
-        //}
+        private readonly NorthwindContext _NorthwindContext; //把資料庫注入
+        private readonly DemoContext _DemoContext; //把資料庫注入
+        DemoContext _context = new DemoContext();        
+        public ApiController(NorthwindContext NorthwindContext, DemoContext DemoContext)
+        {
+            _NorthwindContext = NorthwindContext;
+            _DemoContext = DemoContext;
+        }
+
         public IActionResult Index()
         {
             return View();
         }
         public IActionResult Register(Member member)
         {
-            DemoContext demo = new DemoContext();
-            Member re = demo.Members.FirstOrDefault(p => p.Name == member.Name);
+            //DemoContext demo = new DemoContext();
+            Member re = _DemoContext.Members.FirstOrDefault(p => p.Name == member.Name);
                        
             if (re != null)
                 return Content("此姓名已被使用", "text/plain");
@@ -50,5 +54,15 @@ namespace AJAX_homework.Controllers
             var roads = _context.Addresses.Where(a => a.SiteId == site).Select(a => a.Road).Distinct();
             return Json(roads);
         }
+
+        public IActionResult searchProducts(string keywords)
+        {
+            var products = _NorthwindContext.Products.Where(p => p.ProductName.Contains(keywords))
+                                        .Select(p => p.ProductName);
+            if(products!=null)
+                return Json(products);
+            return Content("0", "text/plain");
+        }
+
     }
 }
