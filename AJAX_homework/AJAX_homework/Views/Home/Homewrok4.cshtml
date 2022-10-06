@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Homewrok4";
+}
+
+<h1>AutoComplete關鍵字搜尋</h1>
+<p id="test"></p>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <h3>AutoComplete</h3>
+        <input type="text" class="form-control" id="autocomplete" />
+
+        <div class="list-group mt-3" id="product_listGroup">            
+        </div>
+
+    </div>
+    <div class="col-3"></div>
+
+</div>
+@section Scripts{ 
+    <script>
+        const test = document.querySelector("#test");
+        const inputText = document.querySelector("#autocomplete");
+        const listData = document.querySelector("#product_listGroup");
+       
+        async function searchKeywords(keywordParameter) {
+            let response = await fetch("@Url.Content("~/api/searchProducts")" + "?keywords=" + keywordParameter)
+            let datas = await response.json();           
+            let htmlDatas = datas.map(resultsData => {
+                return (
+                    `
+      <button type="button" onclick="read(event)" class="list-group-item list-group-item-action">${resultsData}</button>
+                `
+                )
+            })
+            listData.innerHTML = htmlDatas.join(" ");
+        }
+        
+
+        inputText.addEventListener("input", () => {
+            const inputKeyword = inputText.value;
+            searchKeywords(inputKeyword);
+            listData.style.display = "block";           
+
+        }) 
+
+        function read(evt) {
+            inputText.value = evt.target.textContent;
+            listData.style.display = "none";
+        }
+    </script>
+}
+

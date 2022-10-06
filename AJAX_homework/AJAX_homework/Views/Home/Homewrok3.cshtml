@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewData["Title"] = "Homewrok3";
+}
+
+<h1>用async await完成下拉式選單</h1>
+
+<select id="select1"></select>
+<select id="select2"></select>
+<select id="select3"></select>
+
+@section Scripts{
+    <script>
+    const selcity = document.querySelector("#select1");
+    const selsite = document.querySelector("#select2");
+    const selroad = document.querySelector("#select3");
+
+      async function LoadCities() {
+            let response = await fetch("@Url.Content("~/api/city")")
+            let datas = await response.json();
+            datas.forEach(city => {
+                const opt = new Option(city, city)
+                selcity.options.add(opt)
+            })
+            let defaultCity = selcity.options[0].value;
+            LoadSites(defaultCity);
+        }
+
+        async function LoadSites(cityParams) {
+            const url = "@Url.Content("~/api/Site")?city=";
+            let response = await fetch(url + cityParams)
+            let datas = await response.json();
+            selsite.options.length = 0;
+            datas.forEach(site => {
+                const opt = new Option(site, site)
+                selsite.options.add(opt);
+            })
+            let defaultSite = selsite.options[0].value;
+            LoadRoad(defaultSite);
+        }
+
+           async function LoadRoad(siteParams) {
+            const url = "@Url.Content("~/api/Road")?site=";
+            let response = await fetch(url + siteParams)
+            let datas = await response.json();
+               selroad.options.length = 0;
+            datas.forEach(site => {
+                const opt = new Option(site, site)
+                selroad.options.add(opt);
+            })
+        }
+
+        //綁定城市下拉式選單change事件、預載鄉鎮區下拉式選單
+        selcity.addEventListener("change", () => {
+            selectedCity = selcity.options[selcity.selectedIndex].value;
+            LoadSites(selectedCity);
+        })
+
+        //綁定鄉鎮區下拉式選單change事件、預載道路下拉式選單
+        selsite.addEventListener("change", () => {
+            selectedsite = selsite.options[selsite.selectedIndex].value;
+            LoadRoad(selectedsite);
+        })
+
+        LoadCities(); //讀取城市
+
+    </script>
+
+}
